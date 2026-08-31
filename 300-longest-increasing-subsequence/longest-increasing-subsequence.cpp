@@ -5,7 +5,7 @@ public:
 
         for(int x : nums)
         {
-            auto i = lower_bound(lis.begin(),lis.end(),x);
+            auto i = lower_bound(lis.begin(),lis.end(), x);
 
             if(i == lis.end())
             lis.push_back(x);
@@ -13,6 +13,7 @@ public:
             else
             *i = x;
         }
+
         return lis.size();
         
     }
